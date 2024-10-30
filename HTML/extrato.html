@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/extrato.css">
+  <title>Extrato - Banco Online</title>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="../Index.html">Início</a></li>
+        <li><a href="../HTML/transferencia.html">Transferências</a></li>
+        <li><a href="../HTML/pagamentos.html">Pagamentos</a></li>
+        <li><a href="../HTML/extrato.html">Extrato</a></li>
+        <li><a href="../HTML/cartoes.html">Cartões</a></li>
+        <li><a href="../HTML/perfil.html">Perfil</a></li>
+        <li><a href="../HTML/logout.html">Sair</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <h1>Extrato</h1>
+      </header>
+      <section class="statement">
+        <label for="data">Filtrar por data</label>
+        <input type="date" id="data" name="data">
+
+        <button onclick="filterStatement()">Filtrar</button>
+
+        <ul id="statementList">
+          <li>01/09/2024 - Compra na Loja A - R$ 200,00</li>
+          <li>02/09/2024 - Depósito - R$ 1.000,00</li>
+          <li>03/09/2024 - Transferência para João - R$ 500,00</li>
+        </ul>
+
+        <button onclick="exportPDF()">Exportar PDF</button>
+      </section>
+    </main>
+  </div>
+  <script src="../JS/extrato.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/style.css">
+  <title>Dashboard - Banco Online</title>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="HTML/transferencia.html">Transferências</a></li>
+        <li><a href="pagamentos.html">Pagamentos</a></li>
+        <li><a href="extrato.html">Extrato</a></li>
+        <li><a href="cartoes.html">Cartões</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="logout.html">Sair</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <h1>Bem-vindo, Carlão</h1>
+        <p>Saldo disponível: R$ 15,00</p>
+      </header>
+      <section class="quick-actions">
+        <h3>Ações Rápidas</h3>
+        <div class="actions">
+          <button onclick="location.href='transferencias.html'">Transferências</button>
+          <button onclick="location.href='pagamentos.html'">Pagamentos</button>
+          <button onclick="location.href='investimentos.html'">Investimentos</button>
+        </div>
+      </section>
+      <section class="recent-transactions">
+        <h3>Últimos Lançamentos</h3>
+        <ul>
+          <li>01/09/2024 - Compra na Loja Americanas - R$ 20,00</li>
+          <li>02/09/2024 - Depósito - R$ 10,00</li>
+          <li>03/09/2024 - Transferência para Marcola - R$ 500,00</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

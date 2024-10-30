@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/cartoes.css">
+  <title>Cartões - Banco Online</title>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="../Index.html">Início</a></li>
+        <li><a href="../HTML/transferencia.html">Transferências</a></li>
+        <li><a href="../HTML/pagamentos.html">Pagamentos</a></li>
+        <li><a href="../HTML/extrato.html">Extrato</a></li>
+        <li><a href="../HTML/cartoes.html">Cartões</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="logout.html">Sair</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <h1>Cartões</h1>
+      </header>
+      <section class="card-management">
+        <h3>Meus Cartões</h3>
+        <ul>
+          <li>Cartão de Crédito 1234 - Limite: R$ 2.000,00 - Fatura: R$ 500,00</li>
+          <li>Cartão de Débito 5678 - Limite: R$ 5.000,00 - Fatura: R$ 0,00</li>
+        </ul>
+        <button onclick="requestNewCard()">Solicitar Novo Cartão</button>
+        <button onclick="blockCard()">Bloquear Cartão</button>
+      </section>
+    </main>
+  </div>
+  <script src="../JS/cartoes.js"></script>
+</body>
+</html>

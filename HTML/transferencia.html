@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/tranferencia.css">
+  <title>Transferências - Banco Online</title>
+</head>
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="../Index.html">Início</a></li>
+        <li><a href="../HTML/transferencia.html">Transferências</a></li>
+        <li><a href="../HTML/pagamentos.html">Pagamentos</a></li>
+        <li><a href="../HTML/extrato.html">Extrato</a></li>
+        <li><a href="../HTML/cartoes.html">Cartões</a></li>
+        <li><a href="../HTML/perfil.html">Perfil</a></li>
+        <li><a href="../HTML/logout.html">Sair</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <header class="header">
+        <h1>Transferências</h1>
+      </header>
+      <section class="transfer-form">
+        <form id="transferForm">
+          <label for="valor">Valor</label>
+          <input type="number" id="valor" required>
+
+          <label for="destinatario">CPF ou CNPJ do destinatário</label>
+          <input type="text" id="destinatario" required>
+
+          <label for="agenciaConta">Agência e Conta</label>
+          <input type="text" id="agenciaConta" required>
+
+          <button type="submit">Transferir</button>
+        </form>
+      </section>
+    </main>
+  </div>
+  <script src="../HTML/transferencia.html"></script>
+</body>
+</html>

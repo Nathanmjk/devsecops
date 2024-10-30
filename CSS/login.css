@@ -1,0 +1,84 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Contêiner do formulário */
+  .form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+  }
+  
+  /* Título do formulário */
+  .form-container h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  /* Labels dos campos */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+  }
+  
+  /* Inputs dos campos */
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Checkbox lembrar de mim */
+  label input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Botão de entrar */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Link de esqueci minha senha */
+  .form-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .form-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Espaçamento para o link de esqueci minha senha */
+  .form-container p {
+    margin-top: 10px;
+  }
+  

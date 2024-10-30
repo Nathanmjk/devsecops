@@ -1,0 +1,113 @@
+/* Estilo geral para o layout do dashboard */
+.dashboard {
+  display: flex;
+  flex-wrap: wrap; /* Garante que o conteúdo se ajuste em telas menores */
+  position: relative; /* Para garantir que o conteúdo não fique atrás do menu */
+}
+
+/* Menu lateral */
+.sidebar {
+  width: 250px;
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto; /* Adiciona rolagem se necessário */
+  z-index: 1000; /* Garante que o menu esteja acima do conteúdo */
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+  background-color: #495057;
+}
+
+/* Conteúdo principal */
+.main-content {
+  margin-left: 250px;
+  padding: 20px;
+  width: calc(100% - 250px);
+  box-sizing: border-box;
+}
+
+/* Ajuste para dispositivos menores */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative; /* Remove a fixação para dispositivos menores */
+    box-shadow: none;
+    z-index: 1; /* Garante que o menu não sobreponha o conteúdo em dispositivos menores */
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Estilo do formulário de transferências */
+.transfer-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.transfer-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.transfer-form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.transfer-form input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.transfer-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.transfer-form button:hover {
+  background-color: #0056b3;
+}
